@@ -14690,20 +14690,13 @@ float64   : longitude
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Question 1 - Conclusion:</p>
+<p>You can see that most properties are located in and around the centre of London, with most properties being either private rooms or entire homes.</p>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14822,13 +14815,15 @@ float64   : longitude
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate mean distance from centre for two main categories</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Private Room - mean distance from centre: &#39;</span><span class="p">,</span> <span class="n">geo_df</span><span class="p">[</span><span class="n">geo_df</span><span class="p">[</span><span class="s1">&#39;room_type&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;Private room&#39;</span><span class="p">][</span><span class="s1">&#39;dist_from_centre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Entire Home - mean distance from centre: &#39;</span><span class="p">,</span> <span class="n">geo_df</span><span class="p">[</span><span class="n">geo_df</span><span class="p">[</span><span class="s1">&#39;room_type&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;Entire home/apt&#39;</span><span class="p">][</span><span class="s1">&#39;dist_from_centre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 </pre></div>
 
      </div>
@@ -14836,6 +14831,35 @@ float64   : longitude
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Private Room - mean distance from centre:  12.72441203627373
+Entire Home - mean distance from centre:  9.41066258813766
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Question 2 - Conclusion:</p>
+<p>The distribution of the distance from this point is shown by property type. Entire homes have a narrower spread than private rooms with an average distance of about 9 km, with private rooms having an average of 13 km distance from the centre.</p>
+
+</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14844,7 +14868,7 @@ float64   : longitude
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot price vs distance</span>
@@ -14884,20 +14908,13 @@ float64   : longitude
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Question 3 - Conclusion</p>
+<p>The plot shows that in general entire homes follow a pattern of decreasing average price with distance from centre, whereas private rooms are relatively consistently priced irrespective of distance.</p>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14906,7 +14923,7 @@ float64   : longitude
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot distribution of &#39;availability in next 30 days&#39;</span>
@@ -14946,10 +14963,17 @@ float64   : longitude
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Overall availability shows a U-shaped distribution - with more properties with zero or full availability than those inbetween.
+Private rooms are more likely to have full availability</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot availability vs distance</span>
@@ -14989,20 +15013,13 @@ float64   : longitude
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Question 4 - Conclusion</p>
+<p>This distribution is different to price, with no real pattern being observable. The main observation is a number of properties have either full availability or none at all, irrespective of distance.</p>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -15011,7 +15028,7 @@ float64   : longitude
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Amenities column contains a list for each property</span>
@@ -15051,7 +15068,7 @@ float64   : longitude
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>how many amenities are there overall?:  2308
 first 50 values: 
- [&#39;&#39;, &#39;Fiils - Natural Chemical Free - Refillable Bottles conditioner&#39;, &#39;Bose bluetooth speaker sound system&#39;, &#39;Baylis &amp; Harding&#39;, &#39;Lacura -Uplifting shower gel  body soap&#39;, &#39;Common one conditioner&#39;, &#39;Keypad&#39;, &#39;38 TV with standard cable&#39;, &#39;Sea Kelp body soap&#39;, &#39;Amazon Alexa Bluetooth sound system&#39;, &#39;normal shampoo shampoo&#39;, &#39;Miele  refrigerator&#39;, &#39;Caroline Henry  body soap&#39;, &#39;jbl in bulbs Bluetooth sound system&#39;, &#39;Cien shampoo&#39;, &#39;Natural soap body soap&#39;, &#39;induction stove&#39;, &#39;58 HDTV&#39;, &#39;Fast wifi  219 Mbps&#39;, &#39;dove or other brands body soap&#39;, &#39;Fast wifi  110 Mbps&#39;, &#39;Russell Hobbs under the counter fridge and freezer  refrigerator&#39;, &#39;jbl speakers in bulbs Bluetooth sound system&#39;, &#39;Kinsey Apothecary conditioner&#39;, &#39;Kinsey Apothecary shampoo&#39;, &#39;Any conditioner&#39;, &#39;Free dryer  In unit&#39;, &#39;Bose  Bluetooth sound system&#39;, &#39;Wifi  39 Mbps&#39;, &#39;Cole &amp; Lewis body soap&#39;, &#39;Faith in Nature - Wild Rose (100% nature fragrance&#39;, &#39;Herbal Essences  conditioner&#39;, &#39;Samsung  gas stove&#39;, &#39;37 HDTV&#39;, &#39;Washer u00a0In unit&#39;, &#39;Fast wifi  398 Mbps&#39;, &#39;Aeg refrigerator&#39;, &#39;Zanussi gas stainless steel stove&#39;, &#39;Clothing storage: dresser and walk-in closet&#39;, &#39;Siemens for Induction and Bosch for electric oven induction stove&#39;, &#39;mix body soap&#39;, &#39;All brands body soap&#39;, &#39;Original Source Sea Salt and Samphire Shower Gel  body soap&#39;, &#39;HDTV with standard cable&#39;, &#39;standard  conditioner&#39;, &#39;Baby monitor&#39;, &#39;liquid handwash body soap&#39;, &#39;54 HDTV&#39;, &#39;50 HDTV with premium cable&#39;, &#39;Decen 25 Liters Mini Oven oven&#39;]
+ [&#39;&#39;, &#39;Hotpoint oven&#39;, &#39;Aromacure body soap&#39;, &#39;Lamona gas stove&#39;, &#39;Panthene or Sea Kelp by Fine Scottish Soap Co.  conditioner&#39;, &#39;Sage Pro oven&#39;, &#39;The White  Company  body soap&#39;, &#39;SONY sound system with aux&#39;, &#39;Natura Siberia conditioner&#39;, &#39;Common one shampoo&#39;, &#39;Faith in nature (lavender and geranium) body soap&#39;, &#39;Space in Built in Fridge freeze refrigerator&#39;, &#39;Neff refrigerator&#39;, &#39;Organic  body soap&#39;, &#39;private refrigerator&#39;, &#39;IKEA  induction stove&#39;, &#39;Shower body soap&#39;, &#39;Unknown  body soap&#39;, &#39;different brands body soap&#39;, &#39;whirlpool  refrigerator&#39;, &#39;Panasonic home entertainment system sound system with Bluetooth and aux&#39;, &#39;Wifi  46 Mbps&#39;, &#39;4 ring hob electric stove&#39;, &#39;Wine glasses&#39;, &#39;Falcon - 6 hob&#39;, &#39;Just for you  conditioner&#39;, &#39;Fast wifi  110 Mbps&#39;, &#39;Wifi  22 Mbps&#39;, &#39;Childrens books and toys for ages 2-5 years old&#39;, &#39;113 TV with Netflix&#39;, &#39;Any conditioner&#39;, &#39;Long term stays allowed&#39;, &#39;Wifi  25 Mbps&#39;, &#39;B&amp;W/ Marantz/ Pioneer - please ask how to use it sound system with Bluetooth and aux&#39;, &#39;and wardrobe&#39;, &#39;Gaggenau  refrigerator&#39;, &#39;Gas cooker only oven&#39;, &#39;Neff  gas stove&#39;, &#39;bush refrigerator&#39;, &#39;Bose  sound system with Bluetooth and aux&#39;, &#39;Paid parking on premises  7 spaces&#39;, &#39;Clothing storage: dresser and closet&#39;, &#39;variable shampoo&#39;, &#39;Microwave/combi oven&#39;, &#39;SONOS Bluetooth sound system&#39;, &#39;Panasonic  sound system&#39;, &#39;Sony Surround Sound sound system with Bluetooth and aux&#39;, &#39;Multiple  shampoo&#39;, &#39;Pantene or Sea Kelp by Scottish Fine Soaps conditioner&#39;, &#39;Fast wifi  113 Mbps&#39;]
 </pre>
 </div>
 </div>
@@ -15070,7 +15087,7 @@ It still might be interesting to look at the count of amenities and see whether 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a new field &quot;number_of_amenities&quot; in the dataframe</span>
@@ -15085,7 +15102,7 @@ It still might be interesting to look at the count of amenities and see whether 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot distribution of &#39;number of amenities&#39;</span>
@@ -15105,13 +15122,13 @@ It still might be interesting to look at the count of amenities and see whether 
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;seaborn.axisgrid.FacetGrid at 0x2292eeb1a30&gt;</pre>
+<pre>&lt;seaborn.axisgrid.FacetGrid at 0x1e616400f70&gt;</pre>
 </div>
 
 </div>
@@ -15139,7 +15156,51 @@ It still might be interesting to look at the count of amenities and see whether 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate mean number of amanities for two main categories</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Private Room - mean amenities: &#39;</span><span class="p">,</span> <span class="n">geo_df</span><span class="p">[</span><span class="n">geo_df</span><span class="p">[</span><span class="s1">&#39;room_type&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;Private room&#39;</span><span class="p">][</span><span class="s1">&#39;number_of_amenities&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Entire Home - mean amenities: &#39;</span><span class="p">,</span> <span class="n">geo_df</span><span class="p">[</span><span class="n">geo_df</span><span class="p">[</span><span class="s1">&#39;room_type&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;Entire home/apt&#39;</span><span class="p">][</span><span class="s1">&#39;number_of_amenities&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Private Room - mean amenities:  21.555976916735368
+Entire Home - mean amenities:  27.165145859256185
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Observation: number of amenities is pretty similar between private rooms and entire homes</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot number of amenities vs distance</span>
@@ -15179,34 +15240,14 @@ It still might be interesting to look at the count of amenities and see whether 
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Question 5 - Conclusion</p>
+<p>Interestingly this shows more variance than the availability distribution. Hotels do not appear to claim every item as an amenity and there appears to be a trend that entire homes have fewer average amenities the further from the centre they are.</p>
+<p>The interesting fact for me is that it appears that private rooms appear to often claim as many amenities as an entire home, which does make you wonder how much space is left over to sleep in the room!</p>
 
-     </div>
 </div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 </body>
 
