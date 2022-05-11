@@ -45,11 +45,14 @@ This github repo contains
 
 
 ## Acknowledgements
-Airbnb for the use of their data and support of the nanodegree programme
+Airbnb for the use of their data 
 
-Stackoverflow for the wealth of knowledge and advice contained on their site
+How to use geopandas to plot on a map - https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972
 
-Udacity: This work is part of the data scientist nanodegree capstone project
+London Borough shape file - https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london
+
+How to calculate distance from latitude and longitude - https://community.esri.com/t5/coordinate-reference-systems-blog/distance-on-a-sphere-the-haversine-formula/ba-p/902128
+
 
 
 
