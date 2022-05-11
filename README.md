@@ -1,7 +1,7 @@
 # Udacity Data Scientist Nanodegree: Write a blog project
 This is the Write a data science blog project for the Udacity Data Science Nanodegree.
 
-The blog post can be found here: XXXXXXXXXXXXXX
+The blog post can be found here: https://medium.com/@paul.thirtle/airbnb-udacity-write-a-data-science-blog-ef4e2da87962
 
 ## Project Overview :
 I have decided to use the publically available Airbnb data for London. This is quite a large dataset, so I have focused around the location metrics for this project.
